@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SESSION="walkthrough"
-DIR="/Users/chetbackiewicz/Desktop/demos/walkthrough"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WINDOWS=("intro" "cli_tour" "skills" "aw" "delegate")
 
 # Kill existing session if present
