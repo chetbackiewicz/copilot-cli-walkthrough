@@ -47,7 +47,10 @@ This creates a tmux session called **walkthrough** with five windows — each sp
 
 ### 4 — Agentic Workflows
 
-- Letting the CLI drive multi-step, autonomous tasks
+- **What** — Workflow File + AW compiler
+- **Where** — `.github/workflows`
+- **Why** — Security-first CI + AI
+- **How** — Write a workflow → compile to a lock file → set permissions on repo → trigger like a regular workflow
 
 ### 5 — Delegate
 
