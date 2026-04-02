@@ -11,3 +11,14 @@ CLI Tour
 ...
 -> wait.. what are they doing? => /tasks
 
+Helpful Commands
+
+-> see what changed => /diff
+-> gut check changes => /review
+-> deep dive a topic => /research
+-> how much context left? => /context
+-> free up context => /compact
+-> PR stuff from here => /pr
+-> save/export session => /share
+-> run shell directly => ! <command>
+
