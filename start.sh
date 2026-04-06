@@ -15,11 +15,11 @@ fi
 # Kill existing session if present
 tmux kill-session -t "$SESSION" 2>/dev/null || true
 
-# Create session with first window
+# Create session with first window (intro: notes left, two empty shells stacked right)
 tmux new-session -d -s "$SESSION" -n "${WINDOWS[0]}" -c "$DIR"
 tmux send-keys -t "$SESSION:${WINDOWS[0]}" "nvim ${WINDOWS[0]}" Enter
 tmux split-window -h -t "$SESSION:${WINDOWS[0]}" -c "$PROJECT_DIR"
-tmux send-keys -t "$SESSION:${WINDOWS[0]}.2" "copilot" Enter
+tmux split-window -v -t "$SESSION:${WINDOWS[0]}.2" -c "$PROJECT_DIR"
 tmux select-pane -t "$SESSION:${WINDOWS[0]}.1"
 
 # Create remaining windows
