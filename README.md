@@ -40,19 +40,22 @@ This creates a tmux session called **walkthrough** with five windows — each sp
 - Fleet of background agents: `/fleet`
 - Monitoring running work: `/tasks`
 
-### 3 — Skills
+### 3 — Helpful Commands
+
+- `/diff` — see what changed
+- `/review` — review changes
+- `/research` — deep dive a topic
+- `/context` — check context window usage
+- `/compact` — free up context
+- `/pr` — PR from here
+- `! <command>` — run a shell command directly
+
+### 4 — Skills
 
 - **What** — A Markdown file that gives Copilot domain-specific context
 - **Where** — `.github/SKILLS` directory in your repo
 - **Why** — Passive context that enriches every interaction
 - **How** — Create the Markdown file and invoke the skill
-
-### 4 — Agentic Workflows
-
-- **What** — Workflow File + AW compiler
-- **Where** — `.github/workflows`
-- **Why** — Security-first CI + AI
-- **How** — Write a workflow → compile to a lock file → set permissions on repo → trigger like a regular workflow
 
 ### 5 — Delegate
 

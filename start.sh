@@ -3,7 +3,7 @@ set -euo pipefail
 
 SESSION="walkthrough"
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-WINDOWS=("intro" "cli_tour" "skills" "aw" "delegate")
+WINDOWS=("intro" "cli_tour" "helpful_cmds" "skills" "delegate")
 
 # Detect the octocat_supply-* project directory
 PROJECT_DIR=$(find "$DIR" -maxdepth 1 -type d -name "octocat_supply-*" | head -1)
