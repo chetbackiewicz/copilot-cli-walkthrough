@@ -1,8 +1,17 @@
 # Copilot CLI Walkthrough
 
 A guided presentation walkthrough for demoing GitHub Copilot CLI features. The `start.sh` script launches a tmux session with side-by-side neovim notes and a live `copilot` CLI instance for each topic.
-The live copilot CLI instance should start at the root directory of a project matching our octodemo_supply-*pattern. If none match, it will fall back to the root of the walkthrough directory.
-Before starting, clone a demo repository (octodemo_supply-*) within this directory.
+The live copilot CLI instance should start at the root directory of a project matching our `octocat_supply-*` pattern. If none match, it will fall back to the root of the walkthrough directory.
+
+Before starting, clone a demo repository (`octocat_supply-*`) **inside this directory** so that it is a direct child of the walkthrough root (i.e., a sibling of `start.sh`). The `start.sh` script uses `find . -maxdepth 1` to locate it, so the expected layout is:
+
+```
+copilot-cli-walkthrough/
+├── start.sh
+├── octocat_supply-<variant>/   ← clone here
+├── intro.md
+└── ...
+```
 
 ## Prerequisites
 
